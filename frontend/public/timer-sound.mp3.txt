@@ -1,0 +1,12 @@
+# Timer Sound File
+
+This is a placeholder for the timer sound.
+
+To add a custom timer sound:
+1. Replace this file with your own MP3 file
+2. Name it exactly as `timer-sound.mp3`
+3. Place it in this directory (public/)
+
+The app will automatically play this sound when the timer reaches zero.
+
+Recommended: Use a clear, loud beep or alarm sound that can be heard from a distance during competitions.

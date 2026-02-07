@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Team</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <img src="/robot.png" alt="Robot Logo" class="logo">
+      <h1>Add Team</h1>
+    </header>
+
+    <!-- Back button -->
+    <a href="/" class="btn btn-secondary">← Back to Timer</a>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="fll">FIRST LEGO League</button>
+      <button class="tab-button" data-tab="robofest">Robofest</button>
+    </div>
+
+    <!-- Form Container -->
+    <div class="form-container">
+      <!-- FLL Form -->
+      <div id="fll-form" class="form-section active">
+        <h2>Add FLL Team</h2>
+        <form id="fllForm">
+          <div class="form-group">
+            <label for="fllTeamName">Team Name</label>
+            <input type="text" id="fllTeamName" name="teamName" required>
+          </div>
+          <div class="form-group">
+            <label for="fllPitNumber">Pit Number</label>
+            <input type="number" id="fllPitNumber" name="pitNumber" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add FLL Team</button>
+        </form>
+      </div>
+
+      <!-- Robofest Form -->
+      <div id="robofest-form" class="form-section">
+        <h2>Add Robofest Team</h2>
+        <form id="robofestForm">
+          <div class="form-group">
+            <label for="robofestTeamName">Team Name</label>
+            <input type="text" id="robofestTeamName" name="teamName" required>
+          </div>
+          <div class="form-group">
+            <label for="robofestTeamNumber">Team Number</label>
+            <input type="number" id="robofestTeamNumber" name="teamNumber" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Robofest Team</button>
+        </form>
+      </div>
+
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message"></div>
+    </div>
+  </div>
+
+  <script src="/add-team.js"></script>
+</body>
+</html>
